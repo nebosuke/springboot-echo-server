@@ -1,0 +1,18 @@
+## for staging environment settings
+server:
+  port: 8080
+#  ssl:
+#    enabled: true
+#    protocol: TLSv1.2
+#    key-store: echo-service.p12
+#    key-store-password: password
+#    key-store-type: PKCS12
+#    key-alias: echo-service
+spring:
+  main:
+    banner-mode: "off"
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1024MB
+      max-request-size: 1024MB
