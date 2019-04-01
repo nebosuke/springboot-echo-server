@@ -17,7 +17,7 @@ public class EchoController {
 
 	@ApiOperation(value = "POSTしたメッセージをそのまま返答するAPI")
 	@RequestMapping(method = RequestMethod.POST)
-	public String loadSession(@RequestParam("message") String message) {
+	public String echo(@RequestParam("message") String message) {
 		LOG.info("receive message: " + message);
 		return message;
 	}
